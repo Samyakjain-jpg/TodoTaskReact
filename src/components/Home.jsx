@@ -38,7 +38,7 @@ function Home() {
     <h1>Daily6 Goals</h1>
      <form onSubmit={submitHandler}>
       <input type="text" placeholder='Title' value={title} onChange={(e)=>setTitle(e.target.value)} />
-      <textarea placeholder='Desc..' value={description} onChange={(e)=>setDescription(e.target.value)}></textarea>
+      <textarea placeholder='Description' value={description} onChange={(e)=>setDescription(e.target.value)}></textarea>
       <button type='submit'>Add</button>
     </form>
     {tasks.map((item, index)=>(
